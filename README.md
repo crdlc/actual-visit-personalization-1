@@ -21,6 +21,9 @@ The project configuration needs to load the following files, that change the beh
 * /js/plugins/desktop_notifications.js
  * This plugin adds desktop notifications to owner's waiting room.
 
+* BASE_URL/js/zoom_plugin.js
+ * This plugin adds a zoom icon to the toolbar.
+
 ### Locales
 The project configuration needs to load the following files:
 
