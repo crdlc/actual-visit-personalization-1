@@ -1,0 +1,119 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin");
+
+html, body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #000;
+}
+
+.waiting, #endCard, .end {
+  background-color: #32404e;
+}
+
+.end .title, .waiting .title, .waiting .description, .waiting .joining-description {
+  color: #FFF;
+}
+
+.toolbar .record,
+.toolbar .recordings {
+  display: none!important;
+}
+
+.waiting, .dialog, .end .title, .time-left, .stream-name, .chat-ui {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+.waiting .logo {
+  display: none;
+}
+
+b {
+  font-weight: 500;
+}
+
+select {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
+.accept-next {
+  background-image: linear-gradient(to bottom, #FFF 0, #FFF 100%);
+  border: 0;
+  color: #000;
+  border-radius: 0;
+  box-shadow: none;
+
+  .btn-default {
+    border: 0;
+    background-color: #9cc96b;
+    border-radius: 0;
+    color: #FFF;
+    padding: 8px 16px;
+    margin-left: 10px;
+  }
+}
+
+.time-left .left-in-call {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.time-left,
+.toolbar .item,
+.stream-toolbar .item {
+  background-color: rgba(50, 64, 78, 0.8);
+  box-shadow: none;
+}
+
+.time-left {
+  background-color: rgba(50, 64, 78, 0.8);
+}
+
+.toolbar .item:hover,
+.stream-toolbar .item:hover {
+  background-color: rgba(50, 64, 78, 1);
+  opacity: 1;
+}
+
+.stream-toolbar .item.strikethrough .icon:after {
+  background-color: #FFF;
+}
+
+[data-chat-visible="true"] .toolbar .item.chat .icon {
+  color: #FFF;
+}
+
+.chat-ui {
+  .header {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .item.yourself {
+    background-color: #3c3c3c;
+    color: #FFF;
+
+    .link, .link:hover, .link:active, .link:visited {
+      color: #FFF;
+    }
+  }
+}
+
+.stream-name {
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100%;
+  transform: translate(0, 0);
+}
+
+.stream:hover .stream-name,
+.stream[data-video-disabled=true] .stream-name {
+  opacity: 1;
+  transform: translate(0, 0);
+}
